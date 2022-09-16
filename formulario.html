@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clase4 - html : formulario</title>
+    <title>Documento</title>
 </head>
 <body>
-    <h1>clase4</h1>
-    <form
-       action="index.html"
-        method="post">
-        <label>Usuario</label>
-        <input type="text" name="usuario">
-        <br>
-        <label>Password</label>
-        <input type="password" name="password">
-        <br>
-        <label>Edad</label>
-      <select name="edad">
-        <option value="18_25">18 - 25</option>
-        <option value=""26_36>26 - 36</option>
-      </select>
-      <br>
-      <label>Fecha Nac:</label>
-      <input type="date" name="FechaNacimiento">
-      <input type="submit" value="Enviar" >
+   
+    <form>
+      <table>
+       <tr>
+        <td>
+           URL:
+        </td>
+        <td>
+            <input type="url" name="url" required>
+            </td>
+            
+        </tr>
+        <tr>
+          <td>
+            Numero:
+          </td>
+          <td>
+            <input type="number" step="2" min="0" max="3">
+          </td>
+          </tr>
+          <tr>
+            <td>
+              Archivo:
+            </td>
+            <td>
+              <input type="file">
+
+            </td>
+            </tr>
+            <tr>
+          <td colspan="2">
+            <button>
+              Enviar
+            </button>
+            <input type="reset" value="clear"/>
+
+          </td>
+        </tr>
+      </table>
     </form>
+    <a href="index.html">Volver</a>
 </body>
 </html>
